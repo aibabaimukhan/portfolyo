@@ -8,26 +8,23 @@
   <style>
     :root{
       --bg: #f5f5f6;
-      --card: #1f1f23; /* graphite main */
+      --card: #1f1f23;
       --muted: #9aa0a6;
       --accent: #2f2f33;
       --white: #ffffff;
-      --glass: rgba(255,255,255,0.03);
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#ffffff 0%,#f5f6f7 100%);color:#111}
     .container{max-width:1000px;margin:36px auto;padding:28px;background:var(--white);border-radius:12px;box-shadow:0 10px 30px rgba(16,24,40,0.08);display:grid;grid-template-columns:320px 1fr;gap:28px}
-    /* Sidebar */
     .side{background:linear-gradient(180deg,var(--card),#2b2b2f);color:var(--white);padding:24px;border-radius:10px}
-    .name{font-size:20px;font-weight:800;letter-spacing:0.4px;margin:0}
+    .name{font-size:20px;font-weight:800;margin:0}
     .meta{color:var(--muted);font-size:13px;margin-top:8px}
+    .meta a{color:#25d366;text-decoration:none;font-weight:600}
     .section{margin-top:20px}
     .section h3{font-size:13px;color:#dcdfe3;margin:0 0 10px 0;letter-spacing:0.6px}
-    .pill{display:inline-block;background:rgba(255,255,255,0.06);padding:6px 10px;border-radius:999px;font-size:13px;margin:4px 4px 0 0}
     .skill-list{display:flex;flex-wrap:wrap}
     .skill-item{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px;margin:6px 6px 0 0;font-size:13px}
     .gray{color:var(--muted)}
-    /* Main */
     .main{padding:18px}
     .headline{display:flex;align-items:center;justify-content:space-between}
     .goal{font-weight:700;font-size:16px;margin:0}
@@ -38,22 +35,20 @@
     ul{margin:8px 0 12px 18px}
     .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
     .footer{margin-top:20px;font-size:12px;color:var(--muted)}
-    .cta{display:inline-block;background:var(--card);color:var(--white);padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-    /* Responsive */
     @media (max-width:880px){.container{grid-template-columns:1fr;padding:18px}.side{order:2}.main{order:1}}
   </style>
 </head>
 <body>
-  <div class="container" role="main">
-    <aside class="side" aria-label="Контактная информация">
+  <div class="container">
+    <aside class="side">
       <div>
         <h1 class="name">Баймухан Айбек</h1>
-        <div class="meta">Щучинск • +7 702 236 0773<br>Baimukhan.aibek@gmail.com</div>
+        <div class="meta">Щучинск • <br>📞 +7 702 236 0773<br>📧 Baimukhan.aibek@gmail.com<br>💬 <a href="https://wa.me/77022360773" target="_blank">Написать в WhatsApp</a></div>
       </div>
 
       <div class="section">
         <h3>Кратко</h3>
-        <div class="gray">Преподаватель и технический специалист с более чем 10 лет опыта. Мастер по ремонту ПК, 3D‑моделированию, 3D‑печати и разработке веб/мобильных приложений. Открыт к обучению и внедрению новых технологий.</div>
+        <div class="gray">Преподаватель и технический специалист с более чем 10 лет опыта. Мастер по ремонту ПК, 3D-моделированию, 3D-печати и разработке веб/мобильных приложений. Открыт к обучению и внедрению новых технологий.</div>
       </div>
 
       <div class="section">
@@ -61,11 +56,11 @@
         <div class="skill-list">
           <span class="skill-item">Ремонт ПК</span>
           <span class="skill-item">Windows & антивирусы</span>
-          <span class="skill-item">Сети & Wi‑Fi</span>
+          <span class="skill-item">Сети & Wi-Fi</span>
           <span class="skill-item">Microsoft Office</span>
           <span class="skill-item">Adobe (PS, PR)</span>
           <span class="skill-item">Blender / Maya</span>
-          <span class="skill-item">3D‑печать</span>
+          <span class="skill-item">3D-печать</span>
           <span class="skill-item">HTML / CSS / JS</span>
           <span class="skill-item">PHP / MySQL</span>
           <span class="skill-item">React.js</span>
@@ -76,37 +71,30 @@
 
       <div class="section">
         <h3>Инструменты</h3>
-        <div class="pill">Blender</div>
-        <div class="pill">Autodesk Maya</div>
-        <div class="pill">Cura, Creality</div>
-        <div class="pill">Photoshop</div>
-        <div class="pill">Substance Painter</div>
-        <div class="pill">VS Code</div>
-        <div style="height:8px"></div>
+        <div class="gray">Blender, Autodesk Maya, Cura, Creality, Photoshop, Substance Painter, VS Code</div>
       </div>
 
       <div class="section">
         <h3>Дополнительно</h3>
-        <div class="gray">10 лет преподавания, разработка учебных материалов, опыт создания IT‑проектов и ведение контента по технологиям.</div>
+        <div class="gray">10 лет преподавания, разработка учебных материалов, опыт создания IT-проектов и ведение контента по технологиям.</div>
       </div>
-
     </aside>
 
     <section class="main">
       <div class="headline">
         <div>
           <p class="goal">🎯 Цель</p>
-          <div class="years gray">Получение должности специалиста в области IT, 3D‑моделирования, компьютерной техники или веб/мобильной разработки. Ориентирован на развитие и обучение.</div>
+          <div class="years gray">Получение должности специалиста в области IT, 3D-моделирования, компьютерной техники или веб/мобильной разработки. Ориентирован на развитие и обучение.</div>
         </div>
         <div class="years">Опыт: 10+ лет</div>
       </div>
 
       <h2>💼 Опыт работы</h2>
       <div class="job">
-        <strong>Преподаватель IT‑дисциплин / Технический специалист</strong><br>
+        <strong>Преподаватель IT-дисциплин / Технический специалист</strong><br>
         <em>более 10 лет</em>
         <ul>
-          <li>Преподавание информационных технологий, сетей, 3D‑моделирования и программирования.</li>
+          <li>Преподавание информационных технологий, сетей, 3D-моделирования и программирования.</li>
           <li>Обучение работе с офисными, графическими и инженерными программами.</li>
           <li>Разработка учебных материалов и проведение лабораторных занятий.</li>
           <li>Настройка, обслуживание и ремонт компьютерного оборудования в учебных кабинетах.</li>
@@ -122,7 +110,7 @@
         </div>
         <div>
           <h3>3D и творчество</h3>
-          <p>Создание моделей в Blender и Maya; подготовка и печать на FDM‑принтерах; текстурирование и постобработка в Photoshop и Substance Painter.</p>
+          <p>Создание моделей в Blender и Maya; подготовка и печать на FDM-принтерах; текстурирование и постобработка в Photoshop и Substance Painter.</p>
         </div>
         <div>
           <h3>Веб и мобильная разработка</h3>
@@ -144,8 +132,8 @@
       <h2>🏆 Дополнительно</h2>
       <ul>
         <li>10 лет педагогического опыта в сфере IT.</li>
-        <li>Участие и наставничество в конкурсах по 3D‑моделированию.</li>
-        <li>Опыт создания собственных IT‑проектов (финансовая платформа, система заказов).</li>
+        <li>Участие и наставничество в конкурсах по 3D-моделированию.</li>
+        <li>Опыт создания собственных IT-проектов (финансовая платформа, система заказов).</li>
         <li>Активное создание контента по 3D и технологиям.</li>
       </ul>
 
@@ -153,7 +141,6 @@
         <div>GitHub / Портфолио: — (можно добавить ссылку)</div>
         <div style="margin-top:8px">© Баймухан Айбек — Щучинск</div>
       </div>
-
     </section>
   </div>
 </body>
