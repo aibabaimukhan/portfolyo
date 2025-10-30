@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Резюме — Баймухан Айбек</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f5f5f6;
+      --card: #1f1f23; /* graphite main */
+      --muted: #9aa0a6;
+      --accent: #2f2f33;
+      --white: #ffffff;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#ffffff 0%,#f5f6f7 100%);color:#111}
+    .container{max-width:1000px;margin:36px auto;padding:28px;background:var(--white);border-radius:12px;box-shadow:0 10px 30px rgba(16,24,40,0.08);display:grid;grid-template-columns:320px 1fr;gap:28px}
+    /* Sidebar */
+    .side{background:linear-gradient(180deg,var(--card),#2b2b2f);color:var(--white);padding:24px;border-radius:10px}
+    .name{font-size:20px;font-weight:800;letter-spacing:0.4px;margin:0}
+    .meta{color:var(--muted);font-size:13px;margin-top:8px}
+    .section{margin-top:20px}
+    .section h3{font-size:13px;color:#dcdfe3;margin:0 0 10px 0;letter-spacing:0.6px}
+    .pill{display:inline-block;background:rgba(255,255,255,0.06);padding:6px 10px;border-radius:999px;font-size:13px;margin:4px 4px 0 0}
+    .skill-list{display:flex;flex-wrap:wrap}
+    .skill-item{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px;margin:6px 6px 0 0;font-size:13px}
+    .gray{color:var(--muted)}
+    /* Main */
+    .main{padding:18px}
+    .headline{display:flex;align-items:center;justify-content:space-between}
+    .goal{font-weight:700;font-size:16px;margin:0}
+    .years{color:var(--muted);font-size:13px}
+    h2{font-size:15px;margin:0 0 10px 0}
+    p{margin:0 0 10px 0;line-height:1.5;color:#222}
+    .job{padding:14px;border-left:3px solid var(--accent);background:linear-gradient(180deg,rgba(47,47,51,0.02),transparent);border-radius:8px;margin-bottom:12px}
+    ul{margin:8px 0 12px 18px}
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .footer{margin-top:20px;font-size:12px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--card);color:var(--white);padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    /* Responsive */
+    @media (max-width:880px){.container{grid-template-columns:1fr;padding:18px}.side{order:2}.main{order:1}}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <aside class="side" aria-label="Контактная информация">
+      <div>
+        <h1 class="name">Баймухан Айбек</h1>
+        <div class="meta">Щучинск • +7 702 236 0773<br>Baimukhan.aibek@gmail.com</div>
+      </div>
+
+      <div class="section">
+        <h3>Кратко</h3>
+        <div class="gray">Преподаватель и технический специалист с более чем 10 лет опыта. Мастер по ремонту ПК, 3D‑моделированию, 3D‑печати и разработке веб/мобильных приложений. Открыт к обучению и внедрению новых технологий.</div>
+      </div>
+
+      <div class="section">
+        <h3>Навыки</h3>
+        <div class="skill-list">
+          <span class="skill-item">Ремонт ПК</span>
+          <span class="skill-item">Windows & антивирусы</span>
+          <span class="skill-item">Сети & Wi‑Fi</span>
+          <span class="skill-item">Microsoft Office</span>
+          <span class="skill-item">Adobe (PS, PR)</span>
+          <span class="skill-item">Blender / Maya</span>
+          <span class="skill-item">3D‑печать</span>
+          <span class="skill-item">HTML / CSS / JS</span>
+          <span class="skill-item">PHP / MySQL</span>
+          <span class="skill-item">React.js</span>
+          <span class="skill-item">Flutter</span>
+          <span class="skill-item">Git, XAMPP</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Инструменты</h3>
+        <div class="pill">Blender</div>
+        <div class="pill">Autodesk Maya</div>
+        <div class="pill">Cura, Creality</div>
+        <div class="pill">Photoshop</div>
+        <div class="pill">Substance Painter</div>
+        <div class="pill">VS Code</div>
+        <div style="height:8px"></div>
+      </div>
+
+      <div class="section">
+        <h3>Дополнительно</h3>
+        <div class="gray">10 лет преподавания, разработка учебных материалов, опыт создания IT‑проектов и ведение контента по технологиям.</div>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="headline">
+        <div>
+          <p class="goal">🎯 Цель</p>
+          <div class="years gray">Получение должности специалиста в области IT, 3D‑моделирования, компьютерной техники или веб/мобильной разработки. Ориентирован на развитие и обучение.</div>
+        </div>
+        <div class="years">Опыт: 10+ лет</div>
+      </div>
+
+      <h2>💼 Опыт работы</h2>
+      <div class="job">
+        <strong>Преподаватель IT‑дисциплин / Технический специалист</strong><br>
+        <em>более 10 лет</em>
+        <ul>
+          <li>Преподавание информационных технологий, сетей, 3D‑моделирования и программирования.</li>
+          <li>Обучение работе с офисными, графическими и инженерными программами.</li>
+          <li>Разработка учебных материалов и проведение лабораторных занятий.</li>
+          <li>Настройка, обслуживание и ремонт компьютерного оборудования в учебных кабинетах.</li>
+          <li>Консультирование по выбору и установке ПО, внедрение цифровых инструментов.</li>
+        </ul>
+      </div>
+
+      <h2>💻 Ключевые навыки и технологии</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>IT и поддержка</h3>
+          <p>Диагностика и ремонт ПК, установка и настройка Windows, драйверов, антивирусов; оптимизация и восстановление данных; настройка сетей и принтеров; резервное копирование.</p>
+        </div>
+        <div>
+          <h3>3D и творчество</h3>
+          <p>Создание моделей в Blender и Maya; подготовка и печать на FDM‑принтерах; текстурирование и постобработка в Photoshop и Substance Painter.</p>
+        </div>
+        <div>
+          <h3>Веб и мобильная разработка</h3>
+          <p>Frontend: HTML, CSS, JavaScript, React.js. Backend: PHP, MySQL. Мобильная разработка: <strong>Flutter</strong> — интерфейсы, ListView, работа с данными и API.</p>
+        </div>
+        <div>
+          <h3>Безопасность</h3>
+          <p>Настройка антивирусных решений, фаерволы, шифрование и базовый аудит безопасности.</p>
+        </div>
+      </div>
+
+      <h2>📚 Образование</h2>
+      <div class="job">
+        <strong>[Название учебного заведения]</strong><br>
+        Специальность: Информационные технологии / Программирование<br>
+        Годы обучения: 2010 — 2014
+      </div>
+
+      <h2>🏆 Дополнительно</h2>
+      <ul>
+        <li>10 лет педагогического опыта в сфере IT.</li>
+        <li>Участие и наставничество в конкурсах по 3D‑моделированию.</li>
+        <li>Опыт создания собственных IT‑проектов (финансовая платформа, система заказов).</li>
+        <li>Активное создание контента по 3D и технологиям.</li>
+      </ul>
+
+      <div class="footer">
+        <div>GitHub / Портфолио: — (можно добавить ссылку)</div>
+        <div style="margin-top:8px">© Баймухан Айбек — Щучинск</div>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>
